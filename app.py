@@ -7,9 +7,9 @@ import matplotlib.pyplot as plt
 
 model = load_model('Stock_prediction_model.keras')
 
-st.header('Stock Prediction App')
+st.header('Stock Prediction Model Evaluator')
 
-stock= st.text_input("Enter the stock symbol", "MRF.NS")
+stock= st.text_input("Enter the stock symbol", "HINDALCO.NS")
 
 start = '2012-01-01'
 end = '2022-12-21'
