@@ -9,7 +9,7 @@ model = load_model('Stock_prediction_model.keras')
 
 st.header('Stock Prediction App')
 
-stock= st.text_input("Enter the stock symbol", "ITC.NS")
+stock= st.text_input("Enter the stock symbol", "MRF.NS")
 
 start = '2012-01-01'
 end = '2022-12-21'
