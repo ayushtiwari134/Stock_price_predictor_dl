@@ -1,5 +1,6 @@
 keras
 matplotlib
+protobuf
 numpy
 pandas
 scikit_learn
