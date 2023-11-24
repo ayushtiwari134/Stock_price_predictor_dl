@@ -7,3 +7,4 @@ streamlit==1.19.0
 yfinance==0.1.63
 protobuf==3.19.4
 tensorflow==2.7.0
+altair==4.1.0
