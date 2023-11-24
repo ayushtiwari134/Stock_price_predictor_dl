@@ -4,8 +4,9 @@ import yfinance as yf
 from keras.models import load_model
 import streamlit as st
 import matplotlib.pyplot as plt
-
-model = load_model('Stock_prediction_model.keras')
+import os
+model_path = os.path.join(os.path.dirname(__file__), 'Stock_prediction_model.keras')
+model = load_model(model_path)
 
 st.header('Stock Prediction Model Evaluator')
 
