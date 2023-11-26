@@ -4,10 +4,10 @@ import yfinance as yf
 from keras.models import load_model
 import streamlit as st
 import matplotlib.pyplot as plt
-import os
-model_path = os.path.join(os.path.dirname(__file__), 'Stock_prediction_model.keras')
-model = load_model(model_path)
+import pickle
 
+
+model = pickle.load(open('Model.pkl', 'rb'))
 st.header('Stock Prediction Model Evaluator')
 
 stock= st.text_input("Enter the stock symbol", "HINDALCO.NS")
